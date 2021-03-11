@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Form</title>
+        <meta name="description"content=""/>
+        <style>
+        form{
+            background-color: antiquewhite;
+            border:2px solid #000;
+            padding: 20px
+        }
+        label{
+            font-weight: bold;
+        }
+        .submit, .reset{
+            font-weight: bold;
+            background-color: #fff;
+            width:100px;
+            height: 40px;
+        }
+       </style>
+        <script></script>
+        <link rel="stylesheet" href="style.css"> 
+    </head>
+    <body>
+     <form action="test.py"method="POST">
+         <div class="user-name">
+             <label for="">Username</label>
+             <input type="username"required placeholder="Type Your Username">
+         </div><br>
+         <div class="user-password">
+             <label for="">Password</label>
+             <input type="Password"placeholder="Type Your Password"name="Password">
+         </div><br>
+         <div class="user-mobile">
+             <label for="">Mobile</label>
+             <input type="text"placeholder="123+20100 (234)">
+         </div><br>
+         <div class="user-email">
+             <label for="">Email</label>
+             <input type="email"required placeholder="Type Your Valid Email"value="hello@gmail.com"name="email">
+         </div><br>
+         <div class="user-subject">
+             <label for="">Subject</label>
+             <input type="text"placeholder="Subject">
+         </div><br>
+         <input type="hidden" value="4785664">
+         <input type="submit"value="Send Data"class="submit">
+         <input type="Reset"value="Empty Form"class="reset">
+     </form>
+
+    
+    </body>
+</html>
